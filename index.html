@@ -1,0 +1,212 @@
+<head>
+  <link rel = "stylesheet" type="text/css" href = "style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id= "nav">
+      <img id="logo" src="assets/imgs/logo.png">
+       <!--New code that I write: Searchbox-->
+       <div id="search">
+        <input id="getInput" type = "text" placeholder="Search for city"></input>
+        <button id="getWeather" type="submit">Search</button>
+      </div>
+      <!--End of New Code that I worte-->
+  </div>
+  <div id= "clouds">
+    <div class="current">
+      <h1 class="header-1">Current Weather</h1> 
+      <!--Default Output Start-->
+      <div class="basic">
+        <h1 class="basicName"></h1>
+        <img class="basicIcon">
+        <h2 class="basicDescription"></h2>
+        <h2 class="basicTempMax"></h2>
+        <h2 class="basicTempMin"></h2>
+      </div>
+      <!--Default Output End-->
+      <h1 class="name"></h1>
+      <img class="icon">
+      <h2 class="description"></h2>
+      <h2 class="temp_max"></h1>
+      <h2 class="temp_min"></h1>
+    </div>
+    <div class="weekly">
+      <h1>Weather for the next seven days</h1>
+      <!--New Code 2: Added search bars-->
+      <div class="search">
+        <input id="lat" type="text" placeholder="insert latitude">
+        <input id="lon" type="text" placeholder="insert longitude">
+        <button id="getWeekly" type="submit">Search</button>
+      </div>
+    
+      <!--End of New Code 2-->
+      <!--Default Weekly Output Start-->
+      <div class="rudiment">
+        <h2>Seven day forecast for Cape Town</h2>
+        <div class="one">
+          <img class="oneIcon">
+          <div class="oneHumidity"></div>
+          <div class="oneTempMin"></div>
+          <div class="oneTempMax"></div>
+        </div>
+        <div class="two">
+          <img class="twoIcon">
+          <div class="twoHumidity"></div>
+          <div class="twoTempMin"></div>
+          <div class="twoTempMax"></div>
+        </div>
+        <div class="three">
+          <img class="threeIcon">
+          <div class="threeHumidity"></div>
+          <div class="threeTempMin"></div>
+          <div class="threeTempMax"></div>
+          </div>
+        <div class="four">
+          <img class="fourIcon">
+          <div class="fourHumidity"></div>
+          <div class="fourTempMin"></div>
+          <div class="fourTempMax"></div>
+        </div>
+        <div class="five">
+          <img class="fiveIcon">
+          <div class="fiveHumidity"></div>
+          <div class="fiveTempMin"></div>
+          <div class="fiveTempMax"></div>
+        </div>
+        <div class="six">
+          <img class="sixIcon">
+          <div class="sixHumidity"></div>
+          <div class="sixTempMin"></div>
+          <div class="sixTempMax"></div>
+        </div>
+        <div class="seven">
+          <img class="sevenIcon">
+          <div class="sevenHumidity"></div>
+          <div class="sevenTempMin"></div>
+          <div class="sevenTempMax"></div>
+        </div>
+      </div>
+      <!--Default Weekly Output End-->
+      <div class="monday">
+        <img class="monIcon">
+        <div class="monHumidity"></div>
+        <div class="monTempMin"></div>
+        <div class="monTempMax"></div>
+      </div>
+      <div class="tuesday">
+        <img class="tuesIcon">
+        <div class="tuesHumidity"></div>
+        <div class="tuesTempMin"></div>
+        <div class="tuesTempMax"></div>
+      </div>
+      <div class="wednesday">
+        <img class="wedIcon">
+        <div class="wedHumidity"></div>
+        <div class="wedTempMin"></div>
+        <div class="wedTempMax"></div>
+      </div>
+      <div class="thurday">
+        <img class="thursIcon">
+        <div class="thursHumidity"></div>
+        <div class="thursTempMin"></div>
+        <div class="thursTempMax"></div>
+      </div>
+      <div class="friday">
+        <img class="friIcon">
+        <div class="friHumidity"></div>
+        <div class="friTempMin"></div>
+        <div class="friTempMax"></div>
+      </div>
+      <div class="saturday">
+        <img class="satIcon">
+        <div class="satHumidity"></div>
+        <div class="satTempMin"></div>
+        <div class="satTempMax"></div>
+      </div>
+      <div class="sunday">
+        <img class="sunIcon">
+        <div class="sunHumidity"></div>
+        <div class="sunTempMin"></div>
+        <div class="sunTempMax"></div>
+      </div>
+    </div>
+  </div>
+  <div class="popular">
+    <h1 class="heading-2">Popular Cities</h1>
+    <hr> 
+    <div class="popular-2">
+    <div class="cape town pop-style1">
+      <div class="overlay-2">
+        <div class="text">
+      <h1 class="capeTown_name"></h1>
+      <img class="capeTown_icon">
+      <h2 class="capeTown_description"></h2>
+      <h2 class="capeTown_temp_max"></h1>
+      <h2 class="capeTown_temp_min"></h1>
+        <button class="button" style="vertical-align:middle"><span>Show more </span></button>
+
+    </div>
+  </div>
+  </div>
+    <div class="durban pop-style2">
+      <div class="overlay-2">
+        <div class="text">
+      <h1 class="durban_name"></h1>
+      <img class="durban_icon">
+      <h2 class="durban_description"></h2>
+      <h2 class="durban_temp_max"></h1>
+      <h2 class="durban_temp_min"></h1>
+        <button class="button" style="vertical-align:middle"><span>Show more </span></button>
+    </div>
+  </div>
+</div>
+    <div class="joburg pop-style3">
+      <div class="overlay-2">
+        <div class="text">
+      <h1 class="joburg_name"></h1>
+      <img class="joburg_icon">
+      <h2 class="joburg_description"></h2>
+      <h2 class="joburg_temp_max"></h1>
+      <h2 class="joburg_temp_min"></h1>
+        <button class="button" style="vertical-align:middle"><span>Show more </span></button>
+    </div>
+
+  </div>
+  </div>
+    <div class="pretoria pop-style4">
+      <div class="overlay-2">
+        <div class="text">
+      <h1 class="pretoria_name"></h1>
+      <img class="pretoria_icon">
+      <h2 class="pretoria_description"></h2>
+      <h2 class="pretoria_temp_max"></h1>
+      <h2 class="pretoria_temp_min"></h1>
+        <button class="button" style="vertical-align:middle"><span>Show more </span></button>
+    </div>
+  </div>
+</div>
+    <div class="port-elizabeth pop-style5">
+      <div class="overlay-2">
+        <div class="text">
+      <h1 class="pe_name"></h1>
+      <img class="pe_icon">
+      <h2 class="pe_description"></h2>
+      <h2 class="pe_temp_max"></h1>
+      <h2 class="pe_temp_min"></h1>
+        <button class="button" style="vertical-align:middle"><span>Show more </span></button>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+  <div class="map">
+  </div>
+
+  <div id="contact"></div>
+</body>
+
+
+
+<script type="text/javascript" src="jquery-3.5.1.js"></script>
+<script src="script.js"></script>
