@@ -46,8 +46,8 @@ $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=cape%20town&appid=7d
       var basicName = basic.name;
       var basicIcon = "http://openweathermap.org/img/w/" + basic.weather[0].icon + ".png";
       var basicDescription = basic.weather[0].description;
-      var basicTempMax = basic.main.temp_max;
-      var basicTempMin = basic.main.temp_min;
+      var basicTempMax = basic.main.temp_max + "°";
+      var basicTempMin = basic.main.temp_min + "°";
 
       $('.basicName').text(basicName);
       $('.basicIcon').attr('src', basicIcon);
@@ -78,10 +78,10 @@ $('#getWeekly').click(function(){
       var monIcon = "http://openweathermap.org/img/w/" + week.daily[0].weather[0].icon + ".png";
       $('.monIcon').attr('src', monIcon);
       var monHumidity = week.daily[0].humidity;
-      $('.monHumidity').text(monHumidity);
-      var monTempMin = week.daily[0].temp.min;
+      $('.monHumidity').text('HMD' +monHumidity);
+      var monTempMin = week.daily[0].temp.min + "°";
       $('.monTempMin').text(monTempMin);
-      var monTempMax = week.daily[0].temp.max;
+      var monTempMax = week.daily[0].temp.max + "°";
       $('.monTempMax').text(monTempMax);
   
   
@@ -89,9 +89,9 @@ $('#getWeekly').click(function(){
       $('.tuesIcon').attr('src', tuesIcon);
       var tuesHumidity = week.daily[1].humidity;
       $('.tuesHumidity').text(tuesHumidity);
-      var tuesTempMin = week.daily[1].temp.min;
+      var tuesTempMin = week.daily[1].temp.min + "°";
       $('.tuesTempMin').text(tuesTempMin);
-      var tuesTempMax = week.daily[1].temp.max;
+      var tuesTempMax = week.daily[1].temp.max + "°";
       $('.tuesTempMax').text(tuesTempMax);
   
       var wedIcon = "http://openweathermap.org/img/w/" + week.daily[2].weather[0].icon + ".png";
@@ -107,36 +107,36 @@ $('#getWeekly').click(function(){
       $('.thursIcon').attr('src', thursIcon);
       var thursHumidity = week.daily[3].humidity;
       $('.thursHumidity').text(thursHumidity);
-      var thursTempMin = week.daily[3].temp.min;
+      var thursTempMin = week.daily[3].temp.min + "°";
       $('.thursTempMin').text(thursTempMin);
-      var thursTempMax = week.daily[3].temp.max;
+      var thursTempMax = week.daily[3].temp.max + "°";
       $('.thursTempMax').text(thursTempMax);
   
       var friIcon = "http://openweathermap.org/img/w/" + week.daily[4].weather[0].icon + ".png";
       $('.friIcon').attr('src', friIcon);
       var friHumidity = week.daily[4].humidity;
       $('.friHumidity').text(friHumidity);
-      var friTempMin = week.daily[4].temp.min;
+      var friTempMin = week.daily[4].temp.min + "°";
       $('.friTempMin').text(friTempMin);
-      var friTempMax = week.daily[4].temp.max;
+      var friTempMax = week.daily[4].temp.max + "°";
       $('.friTempMax').text(friTempMax);
   
       var satIcon = "http://openweathermap.org/img/w/" + week.daily[5].weather[0].icon + ".png";
       $('.satIcon').attr('src', satIcon);
       var satHumidity = week.daily[5].humidity;
       $('.satHumidity').text(satHumidity);
-      var satTempMin = week.daily[5].temp.min;
+      var satTempMin = week.daily[5].temp.min + "°";
       $('.satTempMin').text(satTempMin);
-      var satTempMax = week.daily[5].temp.max;
+      var satTempMax = week.daily[5].temp.max + "°";
       $('.satTempMax').text(satTempMax);
   
       var sunIcon = "http://openweathermap.org/img/w/" + week.daily[6].weather[0].icon + ".png";
       $('.sunIcon').attr('src', sunIcon);
       var sunHumidity = week.daily[6].humidity;
       $('.sunHumidity').text(sunHumidity);
-      var sunTempMin = week.daily[6].temp.min;
+      var sunTempMin = week.daily[6].temp.min + "°";
       $('.sunTempMin').text(sunTempMin);
-      var sunTempMax = week.daily[6].temp.max;
+      var sunTempMax = week.daily[6].temp.max + "°";
       $('.sunTempMax').text(sunTempMax);
   
     })
@@ -150,66 +150,66 @@ $('#getWeekly').click(function(){
       var oneIcon = "http://openweathermap.org/img/w/" + rudiment.daily[0].weather[0].icon + ".png";
       $('.oneIcon').attr('src', oneIcon);
       var oneHumidity = rudiment.daily[0].humidity;
-      $('.oneHumidity').text(oneHumidity);
-      var oneTempMin = rudiment.daily[0].temp.min;
-      $('.oneTempMin').text(oneTempMin);
-      var oneTempMax = rudiment.daily[0].temp.max;
-      $('.oneTempMax').text(oneTempMax);
+      $('.oneHumidity').text('HMD:  ' +oneHumidity);
+      var oneTempMin = rudiment.daily[0].temp.min + "°";
+      $('.oneTempMin').text('Min: ' +oneTempMin);
+      var oneTempMax = rudiment.daily[0].temp.max + "°";
+      $('.oneTempMax').text('Max: ' +oneTempMax);
   
   
       var twoIcon = "http://openweathermap.org/img/w/" + rudiment.daily[1].weather[0].icon + ".png";
       $('.twoIcon').attr('src', twoIcon);
       var twoHumidity = rudiment.daily[1].humidity;
-      $('.twoHumidity').text(twoHumidity);
-      var twoTempMin = rudiment.daily[1].temp.min;
-      $('.twoTempMin').text(twoTempMin);
-      var twoTempMax = rudiment.daily[1].temp.max;
-      $('.twoTempMax').text(twoTempMax);
+      $('.twoHumidity').text('HMD:  ' +twoHumidity);
+      var twoTempMin = rudiment.daily[1].temp.min + "°";
+      $('.twoTempMin').text('Min: ' +twoTempMin);
+      var twoTempMax = rudiment.daily[1].temp.max + "°";
+      $('.twoTempMax').text('Max: ' +twoTempMax);
   
       var threeIcon = "http://openweathermap.org/img/w/" + rudiment.daily[2].weather[0].icon + ".png";
       $('.threeIcon').attr('src', threeIcon);
       var threeHumidity = rudiment.daily[2].humidity;
-      $('.threeHumidity').text(threeHumidity);
-      var threeTempMin = rudiment.daily[2].temp.min;
-      $('.threeTempMin').text(threeTempMin);
-      var threeTempMax = rudiment.daily[2].temp.max;
-      $('.threeTempMax').text(threeTempMax);
+      $('.threeHumidity').text('HMD:   ' +threeHumidity);
+      var threeTempMin = rudiment.daily[2].temp.min + "°";
+      $('.threeTempMin').text('Min: ' +threeTempMin);
+      var threeTempMax = rudiment.daily[2].temp.max + "°";
+      $('.threeTempMax').text('Max: ' +threeTempMax);
   
       var fourIcon = "http://openweathermap.org/img/w/" + rudiment.daily[3].weather[0].icon + ".png";
       $('.fourIcon').attr('src', fourIcon);
       var fourHumidity = rudiment.daily[3].humidity;
-      $('.fourHumidity').text(fourHumidity);
-      var fourTempMin = rudiment.daily[3].temp.min;
-      $('.fourTempMin').text(fourTempMin);
-      var fourTempMax = rudiment.daily[3].temp.max;
-      $('.fourTempMax').text(fourTempMax);
+      $('.fourHumidity').text('HMD:   ' +fourHumidity);
+      var fourTempMin = rudiment.daily[3].temp.min + "°";
+      $('.fourTempMin').text('Min: ' +fourTempMin);
+      var fourTempMax = rudiment.daily[3].temp.max + "°";
+      $('.fourTempMax').text('Max: ' +fourTempMax);
   
       var fiveIcon = "http://openweathermap.org/img/w/" + rudiment.daily[4].weather[0].icon + ".png";
       $('.fiveIcon').attr('src', fiveIcon);
       var fiveHumidity = rudiment.daily[4].humidity;
-      $('.fiveHumidity').text(fiveHumidity);
-      var fiveTempMin = rudiment.daily[4].temp.min;
-      $('.fiveTempMin').text(fiveTempMin);
-      var fiveTempMax = rudiment.daily[4].temp.max;
-      $('.fiveTempMax').text(fiveTempMax);
+      $('.fiveHumidity').text('HMD:  ' +fiveHumidity);
+      var fiveTempMin = rudiment.daily[4].temp.min + "°";
+      $('.fiveTempMin').text('Min: ' +fiveTempMin);
+      var fiveTempMax = rudiment.daily[4].temp.max + "°";
+      $('.fiveTempMax').text('Max: ' +fiveTempMax);
   
       var sixIcon = "http://openweathermap.org/img/w/" + rudiment.daily[5].weather[0].icon + ".png";
       $('.sixIcon').attr('src', sixIcon);
       var sixHumidity = rudiment.daily[5].humidity;
-      $('.sixHumidity').text(sixHumidity);
-      var sixTempMin = rudiment.daily[5].temp.min;
-      $('.sixTempMin').text(sixTempMin);
-      var sixTempMax = rudiment.daily[5].temp.max;
-      $('.sixTempMax').text(sixTempMax);
+      $('.sixHumidity').text('HMD:   ' +sixHumidity);
+      var sixTempMin = rudiment.daily[5].temp.min + "°";
+      $('.sixTempMin').text('Min: ' +sixTempMin);
+      var sixTempMax = rudiment.daily[5].temp.max + "°";
+      $('.sixTempMax').text('Max: ' +sixTempMax);
   
       var sevenIcon = "http://openweathermap.org/img/w/" + rudiment.daily[6].weather[0].icon + ".png";
       $('.sevenIcon').attr('src', sevenIcon);
       var sevenHumidity = rudiment.daily[6].humidity;
-      $('.sevenHumidity').text(sevenHumidity);
-      var sevenTempMin = rudiment.daily[6].temp.min;
-      $('.sevenTempMin').text(sevenTempMin);
-      var sevenTempMax = rudiment.daily[6].temp.max;
-      $('.sunTempMax').text(sevenTempMax);
+      $('.sevenHumidity').text('HMD:  ' + sevenHumidity);
+      var sevenTempMin = rudiment.daily[6].temp.min + "°";
+      $('.sevenTempMin').text('Min: ' +sevenTempMin);
+      var sevenTempMax = rudiment.daily[6].temp.max + "°";
+      $('.sunTempMax').text('Max: ' +sevenTempMax);
     })
 
     //Default Weekly Output End
@@ -224,8 +224,8 @@ $('#getWeekly').click(function(){
       var capeTownName = capeTown.name;
       var capeTown_icon = "http://openweathermap.org/img/w/" + capeTown.weather[0].icon + ".png";
       var capeTownDescription = capeTown.weather[0].description;
-      var capeTownTempMax = capeTown.main.temp_max;
-      var capeTownTempMin = capeTown.main.temp_min;
+      var capeTownTempMax = capeTown.main.temp_max + "°";
+      var capeTownTempMin = capeTown.main.temp_min + "°";
 
       $('.capeTown_name').text(capeTownName);
       $('.capeTown_icon').attr('src', capeTown_icon);
@@ -242,8 +242,8 @@ $('#getWeekly').click(function(){
       var durbanName = durban.name;
       var durban_icon  = "http://openweathermap.org/img/w/" + durban.weather[0].icon + ".png";
       var durbanDescription = durban.weather[0].description;
-      var durbanTempMax = durban.main.temp_max;
-      var durbanTempMin = durban.main.temp_min;
+      var durbanTempMax = durban.main.temp_max + "°";
+      var durbanTempMin = durban.main.temp_min + "°";
 
       $('.durban_name').text(durbanName);
       $('.durban_icon').attr('src', durban_icon);
@@ -260,8 +260,8 @@ $('#getWeekly').click(function(){
       var joburgName = joburg.name;
       var joburg_icon = "http://openweathermap.org/img/w/" + joburg.weather[0].icon + ".png";
       var joburgDescription = joburg.weather[0].description;
-      var joburgTempMax = joburg.main.temp_max;
-      var joburgTempMin = joburg.main.temp_min;
+      var joburgTempMax = joburg.main.temp_max + "°";
+      var joburgTempMin = joburg.main.temp_min + "°";
 
       $('.joburg_name').text(joburgName);
       $('.joburg_icon').attr('src', joburg_icon);
@@ -278,8 +278,8 @@ $('#getWeekly').click(function(){
       var pretoriaName = pretoria.name;
       var pretoria_icon = "http://openweathermap.org/img/w/" + pretoria.weather[0].icon + ".png";
       var pretoriaDescription = pretoria.weather[0].description;
-      var pretoriaTempMax = pretoria.main.temp_max;
-      var pretoriaTempMin = pretoria.main.temp_min;
+      var pretoriaTempMax = pretoria.main.temp_max + "°";
+      var pretoriaTempMin = pretoria.main.temp_min + "°";
 
       $('.pretoria_name').text(pretoriaName);
       $('.pretoria_icon').attr('src', pretoria_icon);
@@ -296,8 +296,8 @@ $('#getWeekly').click(function(){
       var peName = pe.name;
       var pe_icon = "http://openweathermap.org/img/w/" + pe.weather[0].icon + ".png";
       var peDescription = pe.weather[0].description;
-      var peTempMax = pe.main.temp_max;
-      var peTempMin = pe.main.temp_min;
+      var peTempMax = pe.main.temp_max + "°";
+      var peTempMin = pe.main.temp_min + "°";
 
       $('.pe_name').text(peName);
       $('.pe_icon').attr('src', pe_icon)
@@ -310,3 +310,4 @@ $('#getWeekly').click(function(){
     //$.getJSON('https://api.openweathermap.org/data/2.5/onecall?lat=33.9249&lon=8.4241&exclude=current,minutely,hourly,daily&appid=7d0232e627c8ac12398a819b7dc4c2df', function(alerts){
 
     //})
+    
